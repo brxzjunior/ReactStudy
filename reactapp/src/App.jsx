@@ -10,6 +10,14 @@ import ThirdComponent from './components/ThirdComponent'
 
 function App() {
 
+  const ShowMsg = (x) =>{
+    if(x){
+    return <h2> Deu certo! </h2>
+    } else{
+        return <h2> Deu errado! </h2>
+    }
+}
+
   return (
     <>
       <div>
@@ -21,6 +29,16 @@ function App() {
       </div>
       <div>
         <ThirdComponent/>
+      </div>
+      
+      <div>
+        <button onClick={() =>{alert('Clicado na opção Inline!')}}>
+          Inline function
+        </button>
+      </div>
+
+      <div className='ShowMsg'>
+        {ShowMsg(true)}
       </div>
     </>
   )

@@ -4,3 +4,22 @@
   padding: 2rem;
   text-align: center;
 }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Mobile responsivity*/
+@media (max-width: 720px) {
+
+  body{
+    margin: auto;
+  }  
+
+}
+
+.ShowMsg{
+  color: rgb(111, 0, 255);
+}

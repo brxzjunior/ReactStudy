@@ -3,7 +3,9 @@ const SecondComponent = () => {
 
     return(
         <div>
-            <button>
+            <button onClick={() =>{
+                console.log('Clicado para o console!')
+            }}>
                 Clique, {name}
             </button>
         </div>         
